@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    width: 100%;
+    min-height: 92vh;
+    background: linear-gradient(45deg, #111, #555);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 340px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* clock */
+.clock {
+    width: 100%;
+    height: 60%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-left: .75rem solid #8b8bfa;
+    border-top-left-radius: 10px;
+}
+
+.clock span {
+    font-size: 60px;
+    color: #ddd;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span:not(:last-child) {
+    margin-right: .25rem;
+}
+
+.clock span::after {
+    font-size: 14px;
+    color: #8b8bfa;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hr::after {
+    content: 'HOURS';
+}
+
+#min::after {
+    content: 'MINUTES';
+}
+
+#sec::after {
+    content: 'SECONDS';
+}
+
+/* calendar */
+.calendar {
+    width: 100%;
+    height: 45%;
+    background: #111;
+    color: #8b8bfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-right: .75rem solid #8b8bfa;
+    border-bottom-right-radius: 10px;
+}
+
+#day {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+#date {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ddd;
+}
+
+#month {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    
+}
+
+#year {
+    margin-top: 2rem;
+}
+
+/* footer */
+footer {
+    min-height: 5vh;
+    padding: 1rem 2rem;
+    background: #000;
+    color: #ddd;
+    font-size: .75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: gray;
+}
+
+
